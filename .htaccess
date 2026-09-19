@@ -1,0 +1,11 @@
+# Friendly URLs so you can use /setup and /admin (nicer to type and share).
+# If your host has mod_rewrite turned off, simply use /setup.php and
+# /admin.php instead — everything still works.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^setup/?$ setup.php [L]
+    RewriteRule ^admin/?$ admin.php [L]
+</IfModule>
+
+# Show the invitation as the default page for the folder.
+DirectoryIndex index.php
